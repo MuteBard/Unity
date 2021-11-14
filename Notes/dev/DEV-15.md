@@ -71,14 +71,6 @@
 
 ## Setting our Shader to universal and unlit
 
-    Create/Rename a material as Sparks
-
-![](../images/DEV-15/DEV-15-G.png)
-
-    Drag/Drop to our particle system to the scene and then Update our material in the inspector
-
-![](../images/DEV-15/DEV-15-J.png)
-
     Set the Active target to Universal
 
 ![](../images/DEV-15/DEV-15-P.png)
