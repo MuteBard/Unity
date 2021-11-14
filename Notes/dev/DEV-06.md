@@ -1,4 +1,4 @@
-# DEV-06,
-#### Tags: []
+# DEV-06, Hybrid Effects
+#### Tags: [Hybrid]
 
-![](../images/DEV-06/DEV-06-A.png)
+    Whenever an effect contains 2 or more of the listed types, like shader and mesh

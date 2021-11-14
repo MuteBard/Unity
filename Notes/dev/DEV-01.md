@@ -1,4 +1,16 @@
-# DEV-01,
-#### Tags: []
+# DEV-01, VFX Fundamentals
+#### Tags: [VFX fundamentals]
 
-![](../images/DEV-01/DEV-01-A.png)
+## Types of Effects
++ Particle System
++ Mesh Effects
++ Flipbook
++ Shaders
++ Hybrids
+
+## Principles of VFX
++ Gameplay
++ Timing
++ Shape
++ Contrast
++ Color / Theme
