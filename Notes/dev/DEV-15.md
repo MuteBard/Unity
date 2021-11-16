@@ -18,7 +18,7 @@
 
     2 - Create a Pipeline Asset
 
-![](../images/DEV-15/DEV-15-I.png)
+![](../images/DEV-15/DEV-15-K.png)
 
 
     3 - In Edit > Project Settings > Graphics, Change Scriptable Render Pipeline Settings asset to the asset you just created. 
@@ -146,7 +146,5 @@
 ![](../images/DEV-15/DEV-15-ZD.png)
 
     Adding the Vertex Color node will help us regain that access
-
-![](../images/DEV-15/DEV-15-ZE.png)
 
 ![](../images/DEV-15/DEV-15-ZF.png)

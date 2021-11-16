@@ -16,6 +16,8 @@
     Prefabs
     Textures
     Shaders
+    PostProcessing
+    Pipelines
 
     Organization is fundamental, Things can get real messy fast.
 
