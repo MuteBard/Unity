@@ -11,7 +11,7 @@
 
 ![](../images/DEV-18/DEV-18-B.png)
 
-    Create a Volume and add the volume component (you will have this script if you have Univeral RP installed)
+    Create an empty called volume and add the volume component (you will have this script if you have Univeral RP installed)
 
 ![](../images/DEV-18/DEV-18-C.png)
 

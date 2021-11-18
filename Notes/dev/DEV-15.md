@@ -99,13 +99,13 @@
 
     The second one is the color. Be sure to change the mode to HDR, set color to white and opacity to 100%
 
-![](../images/DEV-15/DEV-15-T.png)
-
 ![](../images/DEV-15/DEV-15-U.png)
 
 ![](../images/DEV-15/DEV-15-V.png)
 
 ## Connecting our new nodes
+
+    Be sure to drag both the Main Texture node and the Color node from the side window into the main window
 
     Press spacebar to bring up the search menu below
 
