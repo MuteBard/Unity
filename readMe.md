@@ -2,7 +2,7 @@
 
     Fundamental understanding of visual effects
 
-## Particle System
+## Particle System: Sparks
 
 ### Looping sparks
 
@@ -15,3 +15,5 @@
 ### Bursting sparks
 
 ![](vfx_sparks_burst.gif)
+
+## Mesh Effects: Area of Effect, (Anticipation, Climax, and Dissipation)
