@@ -1,5 +1,5 @@
 # DEV-20, Creating a hit particle effect
-#### Tags: [particles, hit, screen record]
+#### Tags: [particles, hit, screen record, ezgif]
 
 
 ## Creating a Burst
@@ -14,6 +14,10 @@
 
 ![](../images/DEV-20/DEV-20-E.png)
 
-## Screen recording
+## Screen recording and converting to gif
 
     Windows Key + G
+    https://ezgif.com/video-to-gif
+
+
+    
