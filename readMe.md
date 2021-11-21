@@ -17,3 +17,5 @@
 ![](vfx_sparks_burst.gif)
 
 ## Mesh Effects: Area of Effect, (Anticipation, Climax, and Dissipation)
+
+![](vfx_aoe.gif)

@@ -120,7 +120,14 @@
 
 ![](../images/DEV-21/DEV-21-N.gif)
 
-# RESUME STUDY AT TIMESTAMP 10:00 OF LECTURE 30, ANTICIPATION, CLIMAX AND DISSIPATION
+## Additional changes made to particles
+
+    Refer to export DEV-21(final) to see details
+
+### Progress so far
+
+![](../images/DEV-21/DEV-21-T.gif)
+
 
 
 
