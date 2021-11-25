@@ -1,4 +1,4 @@
-# DEV-23, Porjectiles
+# DEV-23, Projectiles
 #### Tags: [particles, mesh, blender, proportional editing, shade smooth, UV Mapping]
 
 ## Sketches
