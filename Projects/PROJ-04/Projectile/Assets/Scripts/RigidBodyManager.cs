@@ -7,12 +7,14 @@ using UnityEngine;
 public class RigidBodyManager : MonoBehaviour
 {
     Rigidbody rigidBody;
-    [SerializeField] float speedMuliplier = 1f;
+    [SerializeField] float speedMuliplier = .01f;
+    Vector3 initialPosition;
 
     bool isTransitioning = false;
     void Awake()
     {
         rigidBody = GetComponent<Rigidbody>();
+        initialPosition = transform.position;
     }
 
     // https://homeweb.csulb.edu/~pnguyen/cecs475/pdf/cecs475lec5.pdf
@@ -44,6 +46,14 @@ public class RigidBodyManager : MonoBehaviour
     public void ForwardAlongZ(bool moveForward, float speed){
         Vector3 position = moveForward ? new Vector3(0, 0, 1) : new Vector3(0, 0, -1);
         ForwardAlong(position * speed * speedMuliplier *  Time.deltaTime);
+    }
+
+    public void ParabolicTowards(float speed, GameObject other){
+        // Vector3 interceptA = initialPosition;
+        // Vector3 interceptB = other.transform.position;
+        // Vector3 x = new Vector3(1, 1, 1)  * speed * speedMuliplier *  Time.deltaTime;
+        // Vector3 position = (-x + interceptA) * (x - interceptB);
+        // ForwardAlong(position);
     }
 
     private void ClockWise(Vector3 rotation){

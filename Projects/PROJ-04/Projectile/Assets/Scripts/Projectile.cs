@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour
 {
     RigidBodyManager rigidBodyManager;
     [SerializeField] [Range(0,200)] float speed = 10f;
+    [SerializeField] GameObject target;
 
     bool isTransitioning = false;
     void Awake()
