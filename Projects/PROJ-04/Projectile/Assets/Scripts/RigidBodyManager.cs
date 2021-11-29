@@ -7,14 +7,20 @@ using UnityEngine;
 public class RigidBodyManager : MonoBehaviour
 {
     Rigidbody rigidBody;
-    [SerializeField] float speedMuliplier = .01f;
+    [SerializeField] float speedMuliplier = 1f;
     Vector3 initialPosition;
-
     bool isTransitioning = false;
     void Awake()
     {
         rigidBody = GetComponent<Rigidbody>();
         initialPosition = transform.position;
+    }
+
+    void Update(){
+    }
+
+    public void IncreaseVelocity(float speed){
+        rigidBody.velocity = rigidBody.velocity * speed;
     }
 
     // https://homeweb.csulb.edu/~pnguyen/cecs475/pdf/cecs475lec5.pdf
@@ -35,25 +41,17 @@ public class RigidBodyManager : MonoBehaviour
 
     public void ForwardAlongX(bool moveForward, float speed){
         Vector3 position = moveForward ? new Vector3(1, 0, 0) : new Vector3(-1, 0, 0);
-        ForwardAlong(position * speed * speedMuliplier *  Time.deltaTime);
+        ForwardAlong(position * speed * speedMuliplier * Time.deltaTime);
     }
 
     public void ForwardAlongY(bool moveForward, float speed){
         Vector3 position = moveForward ? new Vector3(0, 1, 0) : new Vector3(0, -1, 0);
-        ForwardAlong(position * speed * speedMuliplier *  Time.deltaTime);
+        ForwardAlong(position * speed * speedMuliplier * Time.deltaTime);
     }
 
     public void ForwardAlongZ(bool moveForward, float speed){
         Vector3 position = moveForward ? new Vector3(0, 0, 1) : new Vector3(0, 0, -1);
-        ForwardAlong(position * speed * speedMuliplier *  Time.deltaTime);
-    }
-
-    public void ParabolicTowards(float speed, GameObject other){
-        // Vector3 interceptA = initialPosition;
-        // Vector3 interceptB = other.transform.position;
-        // Vector3 x = new Vector3(1, 1, 1)  * speed * speedMuliplier *  Time.deltaTime;
-        // Vector3 position = (-x + interceptA) * (x - interceptB);
-        // ForwardAlong(position);
+        ForwardAlong(position * speed * speedMuliplier * Time.deltaTime);
     }
 
     private void ClockWise(Vector3 rotation){
@@ -92,4 +90,22 @@ public class RigidBodyManager : MonoBehaviour
     public void stopTransition(){
         isTransitioning = false;
     }
+
+    public void SinusoidalX(float speed, float distance){
+        float value = (float) Math.Sin(Time.time * speed) * distance;
+        Vector3 position = new Vector3(transform.position.x + value, transform.position.y, transform.position.z);
+        transform.position = position;
+    }
+
+    public void SinusoidalY(float speed, float distance){
+        float value = (float) Math.Sin(Time.time * speed) * distance;
+        Vector3 position = new Vector3(transform.position.x, transform.position.y + value, transform.position.z);
+        transform.position = position;
+    }
+
+    public void SinusoidalZ(float speed, float distance){
+        float value = (float) Math.Sin(Time.time * speed) * distance;
+        Vector3 position = new Vector3(transform.position.x, transform.position.y, transform.position.z + value);
+        transform.position = position;   
+    }   
 }
